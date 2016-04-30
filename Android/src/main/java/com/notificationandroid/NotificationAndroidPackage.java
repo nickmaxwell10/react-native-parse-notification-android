@@ -8,9 +8,7 @@ import com.facebook.react.uimanager.ViewManager;
 
 import android.app.Activity;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class NotificationAndroidPackage implements ReactPackage {
   private final Activity mMainActivity;
@@ -22,7 +20,7 @@ public class NotificationAndroidPackage implements ReactPackage {
 
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-    mModuleInstance = new NotificationAndroidModule(reactContext, mMainActivity);
+     mModuleInstance = new NotificationAndroidModule(reactContext, mMainActivity);
 
     return Arrays.<NativeModule>asList(mModuleInstance);
   }

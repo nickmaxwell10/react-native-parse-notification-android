@@ -34,5 +34,6 @@ dependencies {
 
     // @Parse
     compile 'com.parse.bolts:bolts-android:1.+'
-    compile 'com.parse:parse-android:1.+'
+    compile 'com.parse:parse-android:1.10.2'
+    debugCompile 'com.parse:parseinterceptors:0.0.1'
 }
